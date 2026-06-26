@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا 📞</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ستايل إضافي مخصص للفورم بشكل مرتب */
+        .contact-box {
+            background-color: white;
+            max-width: 550px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        .contact-box h2 {
+            color: #0077b6;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: #0077b6;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #005f96;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#destinations-section">الوجهات</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        <div class="logo">TravelNow</div>
+    </nav>
+
+    <div class="contact-box">
+        <h2>نموذج التواصل والحجز</h2>
+        <form>
+            <div class="form-group">
+                <label>الاسم بالكامل:</label>
+                <input type="text" placeholder="اكتب اسمك الثلاثي" required>
+            </div>
+
+            <div class="form-group">
+                <label>البريد الإلكتروني:</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>رقم الهاتف:</label>
+                <input type="tel" placeholder="01XXXXXXXXX" required>
+            </div>
+
+            <div class="form-group">
+                <label>طريقة الدفع المفضلة:</label>
+                <select required>
+                    <option value="" disabled selected>اختر طريقة الدفع</option>
+                    <option value="cash">نقداً (كاش عند الاستلام)</option>
+                    <option value="visa">بطاقة ائتمانية (فيزا / ماستر كارد)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>اكتب رسالتك أو استفسارك:</label>
+                <textarea rows="4" placeholder="اكتب تفاصيل رسالتك هنا..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </form>
+        <a href="index.html" class="back-btn">⬅️ العودة للرئيسية</a>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 موقع السفر والسياحة</p>
+    </footer>
+
+</body>
+</html>
