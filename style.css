@@ -220,4 +220,39 @@ body {
     padding: 25px 0;
     font-size: 14px;
     margin-top: 40px;
+}@media (max-width: 768px) {
+    
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* مسافة صغيرة ومناسبة للموبايل */
+    }
+    
+    .destinations {
+        padding: 40px 20px; /* تقليل المسافات حول قسم الوجهات */
+    }
+}@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* يخلي الكروت تحت بعض بالترتيب */
+        align-items: center;    /* يوسطن الكروت في نص شاشة الموبايل */
+    }
+    
+    .card {
+        width: 90%; /* يخلي الكارت ياخد معظم عرض شاشة الموبايل بشكل شيك */
+    }
 }
